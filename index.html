@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="style.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
+    <title>Svg</title>
+  </head>
+  <body>
+    <figure>
+      <figcaption>Listen to the Teletubbies theme song:</figcaption>
+      <audio controls src="teletubbies-theme-song.mp3">
+        Your browser does not support the
+        <code>audio</code> element.
+      </audio>
+      <!--x horizontal and y vertical-->
+      <svg
+        version="1.1"
+        baseProfile="full"
+        width="100%"
+        height="800"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <rect x="0" y="0" width="100%" height="400" fill="skyblue" />
+        <rect x="0" y="400" width="100%" height="400" fill="green" />
+        <rect x="500" y="200" width="360" height="200" fill="brown" />
+        <rect
+          x="550"
+          y="250"
+          width="90"
+          height="90"
+          fill="#E0E0E0"
+          stroke="#787878"
+          stroke-width="4"
+        />
+        <polygon
+          points="283,277
+        247,277
+        255,300 
+        275,300"
+          fill="#8B4513"
+          class="vase"
+        />
+        <rect x="730" y="250" width="90" height="150" fill="#D2691E" />
+        <polygon points="280,300 100,400 460,400" fill="#800000" class="roof" />
+        <line
+          x1="594"
+          y1="252"
+          x2="594"
+          y2="340"
+          stroke="#787878"
+          stroke-width="4"
+        />
+        <line
+          x1="550"
+          y1="280"
+          x2="640"
+          y2="280"
+          stroke="#787878"
+          stroke-width="4"
+        />
+        <line
+          x1="570"
+          y1="300"
+          x2="570"
+          y2="315"
+          stroke="green"
+          stroke-width="3"
+          fill="green"
+        />
+        <g class="flower">
+          <path
+            d="M34,230 Q40,260 50,230 T70,230"
+            fill="green"
+            stroke="green"
+            stroke-width="2"
+            class="leafs"
+          />
+          <path
+            d="M34,230 Q40,260 50,230 T70,230"
+            fill="green"
+            stroke="green"
+            stroke-width="2"
+            class="leafs2"
+          />
+          <circle cx="570" cy="302" r="5" fill="yellow" />
+        </g>
+        <ellipse cx="750" cy="332" rx="15" ry="4" fill="black" />
+
+        <circle cx="741" cy="332" r="7" />
+        <path d="" />
+        <g class="car">
+          <rect x="40" y="340" width="200" height="40" fill="darkred" />
+          <circle cx="90" cy="400" r="20" />
+          <circle cx="190" cy="400" r="20" />
+          <circle cx="90" cy="400" r="10" fill="grey" />
+          <circle cx="190" cy="400" r="10" fill="grey" />
+          <polygon
+            points="300,260
+        210,260
+        195,300 
+        315,300"
+            fill="#8B4513"
+            class="car-roof"
+          />
+          <polygon
+            points="297,260
+        214,260
+        206,285 
+        305,285"
+            fill="white"
+            class="car-window"
+            stroke="#787878"
+            stroke-width="2"
+          />
+          <line
+            x1="142"
+            y1="309"
+            x2="142"
+            y2="336"
+            stroke="#787878"
+            stroke-width="4"
+          />
+        </g>
+        <circle
+          cx="50"
+          cy="100"
+          r="40"
+          fill="yellow
+      "
+        />
+
+        <!--in order to place elements in svg sometimes(?) you need to place them at them bottom, so they overflow-->
+        <text x="230" y="30" font-size="20" text-anchor="middle" fill="white">
+          Car, flower and house, baby. What is not to like
+        </text>
+      </svg>
+    </figure>
+  </body>
+</html>
