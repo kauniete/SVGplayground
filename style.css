@@ -3,6 +3,7 @@ body {
   padding: 0;
   font-family: "Roboto", sans-serif;
 }
+
 .roof {
   transform: translate(400px, -200px);
 }
@@ -27,7 +28,7 @@ body {
 }
 @keyframes move {
   100% {
-    transform: translateX(100vw);
+    transform: translateX(100%);
   }
 }
 .flower {
